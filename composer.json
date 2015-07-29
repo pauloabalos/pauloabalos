@@ -1,0 +1,18 @@
+{
+	"name": "questwork/questwork-mvc",
+	"description": "Lightning fast MVC framework for PHP",
+	"keywords": ["questwork", "framework", "mvc"],
+	"type": "library",
+	"homepage": "https://github.com/tiepnguyen/questwork-mvc",
+	"license": "Questwork Platform",
+	"authors": [{
+		"name": "Tiep Nguyen",
+		"homepage": "https://tiep.info"
+	}],
+	"require": {
+		"php": ">=5.4.0",
+		"questwork/questwork-core": "dev-master",
+		"facebook/php-sdk-v4": "4.0.*",
+		"twbs/bootstrap": "^3.3"
+	}
+}

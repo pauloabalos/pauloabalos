@@ -1,0 +1,18 @@
+RewriteEngine on
+
+# Disable directory listing #
+# Options -Indexes
+
+# Erro pages #
+# ErrorDocument 403 /403.html
+# ErrorDocument 404 /404.html
+
+# Passing queries to index #
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ index.php [L]
+
+# Enable deflat compress #
+<ifmodule mod_deflate.c>
+AddOutputFilterByType DEFLATE text/text text/plain text/html text/xml text/json text/css application/x-javascript application/javascript
+</ifmodule>
